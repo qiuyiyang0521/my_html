@@ -1,0 +1,12 @@
+/*不知道为什么CSS用不了*/
+.myTable {
+    margin: 0 auto;
+}
+
+table tr td {
+    padding: 10px 10px;
+}
+
+.myTable {
+    background: url(./image/背景.gif;)
+}

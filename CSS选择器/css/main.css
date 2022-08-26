@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+}
+
+.biaoqian a {
+    color: red;
+}
+
+.lei a {
+    color: green;
+}
+
+#myId a {
+    color: pink;
+}

@@ -1,0 +1,24 @@
+* {
+    text-align: center;
+    font-size: 20px;
+}
+
+.one {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+
+.one:hover {
+    color: red;
+    font-size: 40px;
+}
+
+.one:active {
+    color: green;
+    font-size: 40px;
+}
+
+.one:visited {
+    font-size: 40px;
+}

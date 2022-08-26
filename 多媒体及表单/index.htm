@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多媒体及表单</title>
+</head>
+
+<body style="text-align: center;">
+    <div>
+        <h1>锚点</h1>
+        <a href="#1">表单</a><br>
+        <a href="#2">视频</a><br>
+        <a href="#3">音频</a><br>
+        </ul>
+    </div>
+    <div>
+        <form action="mailto:2213090041@qq.com" method="get" target="_blank" name="qiuyiyang" enctype="text/plain">
+            <h1 id="#1">简单的表单</h1>
+            <input type="text" name="qiu" id="qiu">
+            <input type="submit" value="提交">
+        </form>
+    </div>
+    <br />
+    <div>
+        <h1 id="#2">视频</h1>
+        <video src="./image/21-2-3.mpeg4" autoplay controls title="视频" style="height: 600px;width:auto" id="video">
+            您的浏览器不支持video
+        </video>
+        <p class="myP">
+            <button onclick="bofang()">播放</button>
+            <button onclick="zanting()">暂停</button>
+            <button onclick="kuaijin()">快进10秒</button>
+            <button onclick="kuaitui()">快退10秒</button>
+            <button onclick="shutup(this)">无声</button>
+            <button onclick="speedup()">加速播放</button>
+            <button onclick="speeddown()">减速播放</button>
+            <button onclick="normal()">正常播放</button>
+            <button onclick="upper()">调高嗓门</button>
+            <button onclick="lower()">调低嗓门</button>
+            貌似没有用
+        </p>
+        <script type="text/javascript">
+            var video = document.getElementById("video")
+            //播放
+            function bofang() {
+                video.play();
+            }
+            //暂停
+            function zanting() {
+                video.pause();
+            }
+            //快进10秒
+            function kuaijin() {
+                video.currentTime += 10;
+            }
+            //快退10秒
+            function kuaitui() {
+                video.currentTime -= 10;
+            }
+            //有声或无声
+            function shutup(this) {
+                if (video.muted) {
+                    obj.innerHTML = "无声";
+                    video.muted = false;
+                } else {
+                    obj.innerHTML = "有声";
+                    video.muted = true;
+                }
+            }
+            function speedup() {
+                video.playbackRate = 3;
+            }
+            function speeddown() {
+                video.playbackRate = 1 / 3;
+            }
+            function normal() {
+                video.playbackRate = 1;
+            }
+            function upper() {
+                video.volume += 0.1;
+            }
+            function lower() {
+                video.volume -= 0.1;
+            }
+        </script>
+    </div>
+    <br />
+    <div>
+        <h1 id="3">音频</h1>
+        <audio src="" controls loop id="audio"></audio><br>
+        <a href="#" onclick="one()">穷叉叉</a><br>
+        <a href="#" onclick="two()">孤勇者</a><br>
+
+        <script type="text/javascript">
+            var audio = document.getElementById("audio");
+            function one() {
+                audio.src = "./sound/sound.mp3"
+                audio.play()
+            }
+            function two() {
+                audio.src = "./sound/sound2.mp3"
+                audio.play()
+            }
+        </script>
+    </div>
+</body>
+<!--
+锚点
+表单
+视频
+音频
+简单的表单
+视频
+播放 暂停 快进10秒 快退10秒 无声 加速播放 减速播放 正常播放 调高嗓门 调低嗓门 貌似没有用
+音频
+穷叉叉
+孤勇者
+-->
+</html>

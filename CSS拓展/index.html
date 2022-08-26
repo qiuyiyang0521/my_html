@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS拓展</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="./JavaScript/main.js" type="text/javascript">
+        /*
+        您的浏览器不支持JavaScript
+        */
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>鼠标经过、鼠标点击(未松开)、鼠标获得焦点(点击松开)状态时元素的样式</p>
+        <label for="txt">姓名：</label>
+        <input type="text1" id="txt"><br><br>
+        <label for="address">地址：</label>
+        <input type="text1" id="address">
+    </div>
+
+    <div>
+        <p>
+            点击可用按钮时，文本框背景色为pink；点击不可用按钮时，文本框背景色为灰色；
+        </p>
+        <label for="radio1">可用</label>
+        <input type="radio" name="radio" id="radio1" onchange="radio_onchange()">
+        <label for="radio2">不可用</label>
+        <input type="radio" name="radio" id="radio2" onchange="radio_onchange()">
+        <br>
+        <input type="text2" id="text2">
+    </div>
+    <div>
+        <p>E:checked是用来指定表单中的radio单选框、checkbox复选框处于选取状态时的样式</p>
+        <label for="apple">苹果</label>
+        <input type="checkbox" id="apple">
+        <label for="banana">香蕉</label>
+        <input type="checkbox" id="banana">
+        <label for="chengzi">橙子</label>
+        <input type="checkbox" id="chengzi">
+        <label for="boluo">菠萝</label>
+        <input type="checkbox" id="boluo">
+    </div>
+</body>
+
+</html>
